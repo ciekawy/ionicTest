@@ -11,6 +11,15 @@ angular.module('starter.controllers', [])
         console.log("An error happened -> " + error);
     });
   };
+  
+  $scope.aztec = function() {
+    alert('start scanning...');
+    try {
+      scanner.startScanning();
+    } catch (e) {
+      alert('exception: ' + e);
+    }
+  };
 
   $scope.takePicture = function() {
     alert('x');
