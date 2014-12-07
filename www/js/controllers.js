@@ -13,6 +13,7 @@ angular.module('starter.controllers', [])
   };
 
   $scope.takePicture = function() {
+    alert('x');
     var options = { 
         quality : 75, 
         destinationType : Camera.DestinationType.FILE_URI, 
