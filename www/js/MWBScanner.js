@@ -455,7 +455,7 @@
                 /* BEGIN Registration settings */
                 //if your app doesn't work after setting license keys, try to uncomment the try-catch, and see what the error is
                 
-            //    try{
+                try{
                     var mwregister = {
                        'Android' : {
                            'MWB_CODE_MASK_25' : {'username' : '', 'key' : ''},
@@ -506,10 +506,10 @@
                            'MWB_CODE_MASK_DOTCODE' : {'username':'','key':''}
                        }
                     }
-            //    }
-            //    catch(e){
-            //        console.log(e);
-            //    }
+                }
+                catch(e){
+                    alert('init exception' + e);
+                }
                 /* END registration settings */
                 var platform = mwregister[dvc.platform];
 
@@ -549,9 +549,10 @@
 
             };            
         //call the init function
+        alert ('inside startScanning before init... ');
         initFunc(BarcodeScanner,CONSTANTS,device);
-        
         alert ('inside startScanning after init... ');
+        
         
         var callFunc = (typeof callbackMWBS === 'function')?callbackMWBS:function(result){
 
