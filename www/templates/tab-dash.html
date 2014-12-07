@@ -4,9 +4,9 @@
     <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}">
     <img ng-show="imgURI === undefined" ng-src="http://placehold.it/300x300">
     <button class="button" onclick="alert('asd')">A</button>
-    <button class="button" ng-click="takePicture()">Take Picture</button>
-    <button class="button" ng-click="scanBarcode()">scan barcode</button>
-    <button class="button" onclick="scanner.startScanning()" >aztec scan</button>
+    <button class="button" ng-click="takePicture()">Picture</button>
+    <button class="button" ng-click="scanBarcode()">barcode</button>
+    <button class="button" onclick="scanner.startScanning()" >aztec</button>
     {{imageError}}
   </ion-content>
 </ion-view>
