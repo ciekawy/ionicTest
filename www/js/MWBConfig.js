@@ -58,7 +58,7 @@ MWBSInitSpace.init = function(mwbs,constants,dvc){
                'MWB_CODE_MASK_CODABAR' : {'username':'','key':''},
                'MWB_CODE_MASK_DOTCODE' : {'username':'','key':''}
            }
-        }
+        };
 //    }
 //    catch(e){
 //        console.log(e);
@@ -112,6 +112,7 @@ MWBSInitSpace.callback = function(result){
 //     result.bytes - bytes array of raw barcode result
      
     console.log('Scan complete');
+    alert('Scan complete');
     if (result.type == 'Cancel'){
         //Perform some action on scanning canceled if needed
     } 

@@ -444,7 +444,7 @@
  scanner = {};
  
  scanner.startScanning = function(initMWBS,callbackMWBS) {
- 
+    alert ('inside startScanning... ');
  
     //Initialize decoder with default params
     BarcodeScanner.MWBinitDecoder(function(){     
