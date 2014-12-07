@@ -1,6 +1,17 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope, $cordovaCamera) {
+.controller('DashCtrl', function($scope, $cordovaCamera,  $cordovaBarcodeScanner) {
+  
+  $scope.scanBarcode = function() {
+    $cordovaBarcodeScanner.scan().then(function(imageData) {
+        alert(imageData.text);
+        console.log("Barcode Format -> " + imageData.format);
+        console.log("Cancelled -> " + imageData.cancelled);
+    }, function(error) {
+        console.log("An error happened -> " + error);
+    });
+  };
+
   $scope.takePicture = function() {
     var options = { 
         quality : 75, 
