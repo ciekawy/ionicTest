@@ -15,7 +15,7 @@
   
   <gap:plugin name="org.apache.cordova.camera" version="0.3.2" />
   <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.0.0" />
-  <gap:plugin name="com.manateeworks.barcodescanner" version="1.3.0" />
+<!--   <gap:plugin name="com.manateeworks.barcodescanner" version="1.3.0" /> -->
   
   <access origin="*"/>
   <preference name="webviewbounce" value="false"/>
