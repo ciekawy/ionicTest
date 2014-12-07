@@ -13,7 +13,7 @@ angular.module('starter.controllers', [])
   };
   
   $scope.aztec = function() {
-    alert('start scanning...');
+//    alert('start scanning...');
     try {
       scanner.startScanning();
     } catch (e) {

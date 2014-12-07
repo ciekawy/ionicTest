@@ -444,7 +444,6 @@
  scanner = {};
  
  scanner.startScanning = function(initMWBS,callbackMWBS) {
-    alert ('inside startScanning... ');
  
     //Initialize decoder with default params
     BarcodeScanner.MWBinitDecoder(function(){     
@@ -479,7 +478,7 @@
                            'MWB_CODE_MASK_39' : {'username':'','key':''},
                            'MWB_CODE_MASK_93' : {'username':'','key':''},
                            'MWB_CODE_MASK_128' : {'username':'','key':''},
-                           'MWB_CODE_MASK_AZTEC' : {'username':'','key':''},
+                           'MWB_CODE_MASK_AZTEC': {'username': 'szymon@stumeko.pl', 'key': 'EEC2FE60C4667FD54E6A3152B1B56DD1B4781A1B037748A26D1EFB4BC2CF8F63' },
                            'MWB_CODE_MASK_DM' : {'username':'','key':''},
                            'MWB_CODE_MASK_EANUPC' : {'username':'','key':''},
                            'MWB_CODE_MASK_PDF' : {'username':'','key':''},
@@ -551,6 +550,8 @@
             };            
         //call the init function
         initFunc(BarcodeScanner,CONSTANTS,device);
+        
+        alert ('inside startScanning after init... ');
         
         var callFunc = (typeof callbackMWBS === 'function')?callbackMWBS:function(result){
 
