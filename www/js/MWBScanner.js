@@ -445,8 +445,10 @@
  
  scanner.startScanning = function(initMWBS,callbackMWBS) {
  
+   alert ('inside startScanning... ' + device);
     //Initialize decoder with default params
     BarcodeScanner.MWBinitDecoder(function(){     
+      alert ('inside MWBinitDecoder... ');
 
         var initFunc = (typeof initMWBS === 'function')?initMWBS:function(mwbs,constants,dvc){
 
