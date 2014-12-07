@@ -28,6 +28,10 @@
     <param name="wp-package" value="MWBarcodeScanner"/>
   </feature>
   
+	<feature name="Notification">
+	    <param name="ios-package" value="CDVNotification" />
+	    <param name="android-package" value="org.apache.cordova.Notification" />
+	</feature>
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
