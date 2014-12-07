@@ -1,9 +1,10 @@
-<ion-view title="Dashboard b0003">
+<ion-view title="Dashboard b0004">
   <ion-content class="padding">
     <h1>Dash</h1>
     <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}">
     <img ng-show="imgURI === undefined" ng-src="http://placehold.it/300x300">
     <button class="button" ng-click="takePicture()">Take Picture</button>
+    <button class="button" ng-click="scanBarcode()">scan barcode</button>
     {{imageError}}
   </ion-content>
 </ion-view>
