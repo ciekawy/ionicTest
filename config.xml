@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.ionictest286596" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.ionicframework.ionictest286596" version="0.0.1" 
+  xmlns="http://www.w3.org/ns/widgets" 
+  xmlns:cdv="http://cordova.apache.org/ns/1.0"
+  xmlns:gap = "http://phonegap.com/ns/1.0"
+  >
   <name>ionicTest</name>
   <description>
         An Ionic Framework and Cordova project.
@@ -8,6 +12,9 @@
       Ionic Framework Team
     </author>
   <content src="index.html"/>
+  
+  <gap:plugin name="org.apache.cordova.camera" version="0.3.3" />
+  
   <access origin="*"/>
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
@@ -15,5 +22,9 @@
   <preference name="BackupWebStorage" value="none"/>
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
+  </feature>
+  <feature name="Camera">
+    <param name="ios-package" value="CDVCamera" />
+    <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
   </feature>
 </widget>
